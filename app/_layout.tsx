@@ -4,10 +4,19 @@ import { StyleSheet, Text, View } from "react-native";
 const RootLayout = () => {
   return (
     <Stack>
+      {/* HOME */}
       <Stack.Screen
         name="index"
         options={{
           // this hides the default header
+          headerShown: false
+        }}
+      />
+
+      {/* PROFILE */}
+      <Stack.Screen
+        name="profile"
+        options={{
           headerShown: false
         }}
       />
